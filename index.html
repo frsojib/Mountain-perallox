@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Perallox </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="zoom">
+        <img src="images/mountain1.png" id="layer1" >
+        <img src="images/mountain2.png" id="layer2" >
+        <img src="images/text.png" id="text"  >
+    </section>
+    <section class="content">
+        <h2 style="text-align: center;">প্যারাসিটামল</h2>
+        <p style="text-align: center;">
+            ভালোবাসো?<br>
+            তাহলে হার্ট অ্যাটাক তো হবেই।<br>
+            কেননা সমতার নেশায় দেশ<br>
+            তুমি বেচারা মনভুলো<br>
+            ভাবনায় হবে শেষ।<br>
+            তবে শিখতে পারো 'সিপিআর' <br>
+            এম্বুলেন্স কল করে<br>
+            বুকে চেপে- <br>
+            মুখে শ্বাস দিয়ে<br>
+            বাঁচাতে পারো তাকে,<br>
+            অন্যের তরে,<br>
+            এটা ছাড়া কি বা আছে<br>
+            যা তোমার করার?<br><br><br>
+
+            জীবন অর্থহীন,<br>
+            তাই দুহাতে খরচ কর<br>
+            নিজের হৃদপিণ্ড বেঁচে দিয়ে<br>
+            কিছু টাকা নিকোটিন শলাকায় জ্বালিয়ে<br>
+            আর কিছু দিয়ে প্রেমিকার জন্য এক গুচ্ছ সূর্যমুখী কিনে<br>
+            দিনের প্রান্তিকে তার পথ আগলে দাঁড়াও<br>
+            বল, ভালোবাসা ছাড়া এ জীবন অর্থহীন<br>
+            বল, তুমি ছাড়া এ জীবন অর্থহীন।<br>
+            যদি কপাল ভালো হয় তাহলে<br>
+            সেটাই হবে শেষ শলাকা<br>
+            নতুবা প্রেমিকা অন্য সূর্য পানে মুখ ফিরে চাইবে।<br><br><br>
+
+
+            কষ্ট পেয়ে তুমি কাঁদবে<br>
+            কাঁদতে কাঁদতে শরীর লবণাক্ত হবে,<br>
+            পাগল হয়ে যাবে<br>
+            হাসতে হাসতেও কাঁদবে,<br>
+            আবারো শরীর লবনাক্ত হয়ে যাবে, <br>
+            এটাই স্বাভাবিক<br>
+            আমরা এভাবে স্বাভাবিক নই<br>
+            কি ভয়াবহ আমরা এভাবে অস্বাভাবিকভাবে স্বাভাবিক?<br><br><br>
+
+
+            স্বাগতম কবি- <br>
+            এখানে সময় স্থবির,<br>
+            এখানে ভাবনা স্থবির,<br>
+            ভাবতে পারাটাও কঠিন<br>
+            তোমাকে ঘিরে লাস্যময়ী ললনারা<br>
+            জাহান্নাম নিয়ে দন্ডায়মান,<br>
+            শুধু বুঝে ফেলো এটুকুই।<br>
+            ভালোবেসে নীরবে নাম লিখা ভালো,<br>
+            প্রকাশ করা মানেই অথৈ জলে ডুব সাঁতার,<br>
+            যেখানে তুমি সাঁতার না জানা নাবালক,<br>
+            তবেই তোমাকে আর ব্যার্থ প্রেমের কাব্য বুকে নিয়ে<br>
+            যুগ যুগ মৃত্যুর অপেক্ষা করতে হবে না।<br>
+        </p>
+        <h4 style="text-align: center;,font-family: helvetica;">-ফয়জুর রহমান সজীব </h4>
+    </section>
+    <footer id="footer" style="text-align: center;">
+        site develop with HTML,CSS & JAVASCRIPT by <span id="name">FAYZUR RAHMAN SOJIB</span>
+    </footer>
+
+    
+    <script text="text/javascript">
+        var layer1 = document.getElementById('layer1')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll', function(e){
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer1.style.width = (100 + scroll/5) + '%';
+        });
+
+        var layer2 = document.getElementById('layer2')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll', function(e){
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer2.style.width = (100 + scroll/5) + '%';
+            layer2.style.left =  scroll/50 + '%';
+        });
+
+        var text = document.getElementById('text')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll', function(e){
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer2.style.width = (100 + scroll/5) + '%';
+            text.style.top =  - scroll/20 + '%';
+        });
+    </script>
+</body>
+</html>
